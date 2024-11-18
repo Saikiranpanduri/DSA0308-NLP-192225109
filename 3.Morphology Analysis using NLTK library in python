@@ -31,3 +31,30 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+2md way 
+
+
+
+# Define a simple dictionary of words and their morphological information
+dictionary = {
+    'dog': {'POS': 'Noun', 'Definition': 'A domesticated carnivorous mammal'},
+    'jump': {'POS': 'Verb', 'Definition': 'Move quickly and forcefully'},
+    'quick': {'POS': 'Adjective', 'Definition': 'Moving fast or doing something fast'}
+    # Add more words and their morphological information as needed
+}
+
+# Words to analyze
+words_to_analyze = ['dog', 'jump', 'quick', 'cat']  # 'cat' is not in the dictionary
+
+# Analyze each word
+for word in words_to_analyze:
+    print("\nAnalyzing:", word)
+    if word in dictionary:
+        print("Word:", word)
+        print("POS:", dictionary[word]['POS'])
+        print("Definition:", dictionary[word]['Definition'])
+    else:
+        print("Word not found in the dictionary.")
